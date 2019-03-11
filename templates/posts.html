@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{{ url_for('fenci') }}" enctype="multipart/form-data" method="post">
+    <p><span>文件上传：</span><input type="file" name="file"></p>
+    <p><span>topK:</span><input type='text' name="topK" value=""></p>
+    <p><span>文本:</span></p>
+        <textarea name="txt" clos="500" rows="30" warp="virtual" placeholder="请输入文本"></textarea>
+    <p><input type="submit" value="提交" name="提交"></p>
+</form>
+</body>
+</html>
